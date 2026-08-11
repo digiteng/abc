@@ -3,12 +3,12 @@ import requests
 import os # İşletim sistemi modülünü ekleyin
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 GITHUB_URL = os.environ.get('GITHUB_URL')
-
+TMDB_API = os.environ.get('TMDB_API')
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    TMDB_API = "3c3efcf47c3577558812bb9d64019d65"
+    
     lang = "en"
     title = "joker"
     year = "2019"
