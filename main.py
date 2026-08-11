@@ -2,7 +2,8 @@ from flask import Flask
 import requests
 import os # İşletim sistemi modülünü ekleyin
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
-GITHUB_URL = os.environ.get('GITHUB_URL')
+#GITHUB_URL = os.environ.get('GITHUB_URL')
+GITHUB_URL = 'https://api.github.com/repos/digiteng/xe8/contents/xtra.py'
 app = Flask(__name__)
 
 @app.route('/')
