@@ -12,7 +12,7 @@ app = Flask(__name__)
 def home():
     gelen_sifre = request.headers.get('X-Api-Key')
     if not VERCEL_SIFRE or gelen_sifre != VERCEL_SIFRE:
-        return jsonify({"hata": "incorrect password"})
+        return jsonify({"ERROR": "Unauthorized Access"})
     lang = "en"
     title = "joker"
     year = "2019"
