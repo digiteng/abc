@@ -14,7 +14,7 @@ def home():
         'authorization': f'token {GITHUB_TOKEN}'
     }
     
-    req = requests.get(URL, stream=True, allow_redirects=True, headers=header).text
+    req = requests.get(GITHUB_URL, stream=True, allow_redirects=True, headers=header).text
     return req
 
 @app.route('/about')
