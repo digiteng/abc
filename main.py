@@ -24,7 +24,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return "Hakkımızda sayfası"
+    return "by digiteng"
 
 if __name__ == '__main__':
     app.run()
