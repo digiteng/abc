@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     req="working..."
     header={'accept': 'application/vnd.github.v3.raw', 'authorization': f'token {GITHUB_TOKEN}'}
-    req = requests.get(GITHUB_URL, headers=header)
+    #req = requests.get(GITHUB_URL, headers=header)
     return req
 
 @app.route('/about')
