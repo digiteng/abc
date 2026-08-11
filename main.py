@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     req="working..."
-    return req
+    return GITHUB_TOKEN
 
 @app.route('/about')
 def about():
